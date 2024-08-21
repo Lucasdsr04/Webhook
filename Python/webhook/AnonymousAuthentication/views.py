@@ -24,10 +24,13 @@ def webhook(request):
         #tratamento da extensão do arquivo (sem especificar = .zip)
         #colocar nome dos arquivos em lista_xlsv se quiser em excel
         
-        lista_xlsx = ["Acomph", "RDH"] 
+        lista_xlsx = ["RDH"] 
+        lista_xls = ["Acomph"]
 
-        if  file_name in lista_xlsx :
+        if  file_name in lista_xlsx:
             extension = 'xlsx'
+        elif file_name in lista_xls:
+            extension = 'xls'
         else:
             extension = 'zip'
 
