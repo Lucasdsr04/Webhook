@@ -12,5 +12,5 @@ pip install djangorestframework
 ## Como executar
 
 ```
-python manage.py runserver
+python ons-sintegre-webhook-master\Python\manage.py runserver
 ```
